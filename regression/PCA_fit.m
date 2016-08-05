@@ -7,10 +7,7 @@ X = [x y];
 mu = mean(X);
 x0 = mu(1:end-1); y0 = mu(end);
 
-m = X - mean(X);
-R = m'*m/size(m,1);   % sample covariance matrix
-
-[vec, ~] = eig(R); % eigenvectors of covariance matrix
+[vec, ~] = eig(cov(X)); % eigenvectors of covariance matrix
 basis = vec(:,(end-size(x,2)+1):end); % basis of the hyperplane
 
 A = [x0 1; basis(1:end-1,:)' zeros(size(basis,2),1)];
