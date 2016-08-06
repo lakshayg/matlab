@@ -1,1 +1,4 @@
-This repository contains Matlab codes for various purposes which have been classified appropriately. All codes have been tested with MATLAB R2016b. Most of these codes can also be directly used with octave (you may need to install package from octave-forge).
+This repository contains Matlab codes for various purposes which have been classified appropriately. All codes have been tested with MATLAB R2016b. Most of these codes can also be directly used with octave (you may need to install packages from octave-forge).
+
+Octave Packages Required
+* statistics
